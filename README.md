@@ -1,4 +1,4 @@
-# Repositorio para Sistemas Embebebidos
+# Repositorio para sistemas embebebidos
 
 Material de TPs, cursada y proyecto final
 
