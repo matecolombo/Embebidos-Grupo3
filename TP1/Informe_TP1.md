@@ -73,12 +73,15 @@ Documentar mediante tablas c/texto e imágenes la estructura de archivos, su tip
 #### 1.11) Conflictos y errores a lo largo de la primera ejecución.
 
 **Primera compilación.**
+
 Luego de la primera instalación y configuración inicial cuando se trató de compilar el projecto, salieron errores relacionados a las ubicaciones de ciertos archivos. Comparando mi pantalla con las capturas del instructivo me di cuenta que habia iniciado el Eclipse con otra direccion para rl workspace.
 
 **Primer debug**
+
 Luego de haber compilado sin errores y configurar el debuggeo, al precionar debug aparecia una ventana mencionando un error con respecto al OCD. Repasando el instructivo me di cuenta que habia olvidado ejecutar el zadig por lo que no me estaba reconociendo el puerto correcto. 
 
 **Version de Yakindu**
+
 La licencia que tenemos de Yakindu no funciona en la última versión (4.0.5) del software disponible como plug in de Eclipse ingresando a *Help->Eclipse->Marketplace*, por lo que tuvimos que instalar la versión anterior (3.4.1) desde *Help->Istall New Software*.
 
 
