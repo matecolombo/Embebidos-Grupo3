@@ -1,5 +1,6 @@
-# Robot-Jardinero
-**Firmware para Robot jardinero**
+# Repositorio para Sistemas Embebebidos
+
+Material de TPs, cursada y proyecto final
 
 ## Integrantes:
 
