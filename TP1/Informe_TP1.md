@@ -20,7 +20,7 @@ Seleccionar el Workspace: *C:\CIAA\CIAA_Software_1.1-Win\workspaces\eclipse-ws*
 #### 1.2) 
 En el archivo program.mk podrá configurar el programa en el que se trabajará: PROGRAM_PATH = examples/c/sapi/statecharts PROGRAM_NAME = 1_toggle
 
-![Modificación del archivo program.mk](TP1/Imagenes_TP1/Item 1/select_program.PNG)
+![Modificación del archivo program.mk](https://github.com/matecolombo/Robot-Jardinero/blob/6bf8ad108e5bf607c34b56a1e7538894aaca3426/TP1/Imagenes_TP1/Item%201/select_program.PNG)
 
 
 #### 1.3)
