@@ -1,5 +1,5 @@
 # Robot-Jardinero
-** Firmware para Robot jardinero **
+**Firmware para Robot jardinero**
 
 ## Integrantes:
 
