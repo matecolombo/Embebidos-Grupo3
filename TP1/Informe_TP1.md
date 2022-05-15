@@ -26,7 +26,7 @@ En el archivo program.mk podrá configurar el programa en el que se trabajará: 
 #### 1.3)
 En el archivo board.mk podrá configurar la placa a utilizar: BOARD = edu_ciaa_nxp
 
-![Modificación del archivo program.mk]()
+![Includes en archivo board.mk](https://github.com/matecolombo/Robot-Jardinero/blob/67263f8ae2f6c72e95644966950391462b45893e/TP1/Imagenes_TP1/Item%201/includes.PNG)
 
 #### 1.4)
 Verifique tener en la carpeta examples/c/sapi/statcharts/1_toggle/ los archivos:
@@ -36,27 +36,39 @@ Verifique tener en la carpeta examples/c/sapi/statcharts/1_toggle/ los archivos:
 ##### 1.4.2)
 **toggle.sgen** Yakindu SCT Code Generator Model file
 
-![Modificación del archivo program.mk]()
+![Archivos del Yakindu](https://github.com/matecolombo/Robot-Jardinero/blob/67263f8ae2f6c72e95644966950391462b45893e/TP1/Imagenes_TP1/Item%201/1_Toggle.PNG)
 
 #### 1.5)
 Para Editar el modelo: Doble clic sobre **toggle.sct**
 
+![Diagrama de estados del modelo](https://github.com/matecolombo/Robot-Jardinero/blob/67263f8ae2f6c72e95644966950391462b45893e/TP1/Imagenes_TP1/Item%201/modelo.PNG)
+
 #### 1.6)
 Para simular el modelo: Clic derecho sobre **toggle.sct**->Run Us->Statechart Simulation
 
-![Modificación del archivo program.mk]()
+![Secuancia de pasos para simular el modelo](https://github.com/matecolombo/Robot-Jardinero/blob/67263f8ae2f6c72e95644966950391462b45893e/TP1/Imagenes_TP1/Item%201/Simulacion.png)
 
 #### 1.7)
 Para editar la generación de modelo: Doble clic sobre **toggle.sgen**
 
+![...](https://github.com/matecolombo/Robot-Jardinero/blob/67263f8ae2f6c72e95644966950391462b45893e/TP1/Imagenes_TP1/Item%201/generador.PNG)
+
 #### 1.8)
 Para Generar el código del modelo: Clic derecho sobre **toggle.sgen** -> Generate Code Artifacts (Artifacts => gen/Toggle.c, gen/Toggle.h, gen/ToggleRequired.h y inc/sc_types.h)
+
+![Secuancia de pasos para generar código a partir del modelo de Yakindu](https://github.com/matecolombo/Robot-Jardinero/blob/57b0ff8d08d4ad0bed0c01417424829bffd83e38/TP1/Imagenes_TP1/Item%201/code_artifacts.png)
+
+![Archivos generados](https://github.com/matecolombo/Robot-Jardinero/blob/57b0ff8d08d4ad0bed0c01417424829bffd83e38/TP1/Imagenes_TP1/Item%201/archivos_generados.PNG)
 
 #### 1.9)
 Compilar firmware_v3 => Configurar Debug => Probar Debug
 
+![Debug]()
+
 #### 1.10)
 Documentar mediante tablas c/texto e imágenes la estructura de archivos, su tipo/contenido (especialmente readme.txt) de c/proyecto importado
+
+![Resumen de las clases de archivos implicados en los proyectos](https://github.com/matecolombo/Robot-Jardinero/blob/57b0ff8d08d4ad0bed0c01417424829bffd83e38/TP1/Imagenes_TP1/Item%201/diagrama%20de%20archivos.drawio.png)
 
 #### 1.11) Conflictos y errores a lo largo de la primera ejecución.
 
