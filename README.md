@@ -1,8 +1,8 @@
 # Robot-Jardinero
-Firmware para Robot jardinero
+** Firmware para Robot jardinero **
 
-Integrantes:
+## Integrantes:
 
-Alan Calcagno
+*Alan Calcagno
 Mateo Colombo
-Agustín Primón
+Agustín Primón*
