@@ -20,13 +20,13 @@ Seleccionar el Workspace: *C:\CIAA\CIAA_Software_1.1-Win\workspaces\eclipse-ws*
 #### 1.2) 
 En el archivo program.mk podrá configurar el programa en el que se trabajará: PROGRAM_PATH = examples/c/sapi/statecharts PROGRAM_NAME = 1_toggle
 
-![Modificación del archivo program.mk](https://drive.google.com/file/d/1hE8M2wSAhxe6hy9bvr2JIXrwG9WaF74c/view?usp=sharing)
+![Modificación del archivo program.mk](TP1/Imagenes_TP1/Item 1/select_program.PNG)
 
 
 #### 1.3)
 En el archivo board.mk podrá configurar la placa a utilizar: BOARD = edu_ciaa_nxp
 
-![Modificación del archivo program.mk](https://drive.google.com/file/d/1hE8M2wSAhxe6hy9bvr2JIXrwG9WaF74c/view?usp=sharing)
+![Modificación del archivo program.mk]()
 
 #### 1.4)
 Verifique tener en la carpeta examples/c/sapi/statcharts/1_toggle/ los archivos:
@@ -36,7 +36,7 @@ Verifique tener en la carpeta examples/c/sapi/statcharts/1_toggle/ los archivos:
 ##### 1.4.2)
 **toggle.sgen** Yakindu SCT Code Generator Model file
 
-![Modificación del archivo program.mk](https://drive.google.com/file/d/1hE8M2wSAhxe6hy9bvr2JIXrwG9WaF74c/view?usp=sharing)
+![Modificación del archivo program.mk]()
 
 #### 1.5)
 Para Editar el modelo: Doble clic sobre **toggle.sct**
@@ -44,7 +44,7 @@ Para Editar el modelo: Doble clic sobre **toggle.sct**
 #### 1.6)
 Para simular el modelo: Clic derecho sobre **toggle.sct**->Run Us->Statechart Simulation
 
-![Modificación del archivo program.mk](https://drive.google.com/file/d/1hE8M2wSAhxe6hy9bvr2JIXrwG9WaF74c/view?usp=sharing)
+![Modificación del archivo program.mk]()
 
 #### 1.7)
 Para editar la generación de modelo: Doble clic sobre **toggle.sgen**
@@ -60,8 +60,14 @@ Documentar mediante tablas c/texto e imágenes la estructura de archivos, su tip
 
 #### 1.11) Conflictos y errores a lo largo de la primera ejecución.
 
+**Primera compilación.**
+Luego de la primera instalación y configuración inicial cuando se trató de compilar el projecto, salieron errores relacionados a las ubicaciones de ciertos archivos. Comparando mi pantalla con las capturas del instructivo me di cuenta que habia iniciado el Eclipse con otra direccion para rl workspace.
 
+**Primer debug**
+Luego de haber compilado sin errores y configurar el debuggeo, al precionar debug aparecia una ventana mencionando un error con respecto al OCD. Repasando el instructivo me di cuenta que habia olvidado ejecutar el zadig por lo que no me estaba reconociendo el puerto correcto. 
 
+**Version de Yakindu**
+La licencia que tenemos de Yakindu no funciona en la última versión (4.0.5) del software disponible como plug in de Eclipse ingresando a *Help->Eclipse->Marketplace*, por lo que tuvimos que instalar la versión anterior (3.4.1) desde *Help->Istall New Software*.
 
 
 ## 2) Ejemplo 2_blink
