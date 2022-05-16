@@ -91,17 +91,17 @@ La licencia que tenemos de Yakindu no funciona en la última versión (4.0.5) de
 
 La funcion tickCallbackSet es una funcion que llama a la rutina de interrupcion que se llevara a cabo, en este caso será setear SysTick_Time_Flag en true.
 
-![Funcion mytickhook](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%201/mytickhook.png?raw=true)
+![Funcion mytickhook](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%203/mytickhook.png?raw=true)
 
 Otra función que cabe destacar es Buttons_GetStatus.
 
-![Funcion buttons_getstatus](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%201/buttons_getstatus.png)
+![Funcion buttons_getstatus](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%203/buttons_getstatus.png)
 
 Esta función nos retorna la variable *"Ret"* que nos indica que pulsador fue apretado seteando un 1 lógico en dicha posición (leido de derecha a izquierda), en caso de pulsarse dos o mas botones, estos quedan registrados.
 
 En el main esta variable se llama BUTTON_Status, y de no ser nula, se toma como evento *evTECXOprimido* en la máquina de estados (caso contrario) *evTECXNoOprimido*, y se corre un ciclo de la máquina de estados buttons_runCycle.
 
-![Captura Main](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%201/main.png)
+![Captura Main](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%203/main.png)
 
 **Aquí existen dos escenarios posibles:**
 
@@ -115,7 +115,7 @@ No se modifica el estado **No oprimido**.
 
 Se puede ver que el diagrama de estados que tiene el programa es el explicado anteriormente.
 
-![Captura Main](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%201/estados_buttons.png)
+![Captura Main](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%203/estados_buttons.png)
 
 ## 4) Ejemplo para TPF
 
