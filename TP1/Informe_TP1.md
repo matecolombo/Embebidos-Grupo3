@@ -63,10 +63,46 @@ Para Generar el código del modelo: Clic derecho sobre **toggle.sgen** -> Genera
 #### 1.9)
 Compilar firmware_v3 => Configurar Debug => Probar Debug
 
-![Debug]()
+![Debug en el inicio del programa.](https://github.com/matecolombo/Robot-Jardinero/blob/36db7542b412ec276b2664d99ce9734db73080a2/TP1/Imagenes_TP1/Item%201/debug_1.PNG)
+![Debug en el inicio del programa.](https://github.com/matecolombo/Robot-Jardinero/blob/36db7542b412ec276b2664d99ce9734db73080a2/TP1/Imagenes_TP1/Item%201/debug_2.PNG)
 
 #### 1.10)
 Documentar mediante tablas c/texto e imágenes la estructura de archivos, su tipo/contenido (especialmente readme.txt) de c/proyecto importado
+
+A continuacion seguiremos paso a paso la ejecución del programa de ejemplo **1_toggle**. En las imagenes anteriores se puede ver la invocación de las funciones de inicialización del programa. El *main()* funciona como el *setup()* del programa.
+Comenzamos con la inicializacion de la placa llamando a *boardConfig()*, función declarada en **sapi_board.h** y definida en **sapi_board.c**. La misma llama internamente a *boardInit()* que configura el hardware directamente.
+
+![Función *boardInit()*](https://github.com/matecolombo/Robot-Jardinero/blob/889549c8f92f1e6cd3b2c1c34f5afff307796310/TP1/Imagenes_TP1/Item%201/board_config_init.PNG)
+
+Luego se invoca a la función *tickConfig(TICKRATE_MS)*, función declarada en **sapi_tick.h** y definida en **sapi_tick.c**. La misma llama internamente a *tickInit()* que configura la frecuencia de los ticks de la placa. El define TICKRATE_MS esta seteada en 1000 tick por segundos.
+
+![Función *tickInit()*](https://github.com/matecolombo/Robot-Jardinero/blob/889549c8f92f1e6cd3b2c1c34f5afff307796310/TP1/Imagenes_TP1/Item%201/tick_config_init.PNGG)
+
+Lo siguiente que se ejecuta es la función *tickCallBackSet(myTickHook, (void)\* NULL)*, función que define una rutina de interrupción a utilizar. (Chequear!)
+
+![Función *tickCallBackSet()*](https://github.com/matecolombo/Robot-Jardinero/blob/99fdcd19ee16df4198bfac966046ea52dddea712/TP1/Imagenes_TP1/Item%201/tick_hook.PNG)
+
+A continuación se llamarán dos funciones definidas y declaradas en **Toggle.h/c**. Tanto estos archivos como las funciones dentro son generadas a partir del diagrama de estados hecho en Yakindu. Se les pasará a las funciones *toggle_init(&statechart)* y *toggle_enter(&statechart)* el modelo generado para ser alterado dentro de las mismas.
+
+![Definición del objeto](https://github.com/matecolombo/Robot-Jardinero/blob/9165a3e5d080afb3b05dfdab4dced4ebeee688fe/TP1/Imagenes_TP1/Item%201/statechart_toggle.PNG)
+
+![Declaración del objeto y primitivas](https://github.com/matecolombo/Robot-Jardinero/blob/9165a3e5d080afb3b05dfdab4dced4ebeee688fe/TP1/Imagenes_TP1/Item%201/toggle_struct.PNG)
+
+*toggle_init()* inicializa en cero todas las posiciones de un vector de estados y limpia eventos entrantes o salientes inicializando tales campos en cero.
+
+![Función *toggle_init()*](https://github.com/matecolombo/Robot-Jardinero/blob/9165a3e5d080afb3b05dfdab4dced4ebeee688fe/TP1/Imagenes_TP1/Item%201/toggle_init_statemachine.PNG)
+
+Habiendo concluido el "*setup*" del programa, ingresamos en el *loop* principal del programa implementado mediante un *while(1)*. A continuación comentaremos las funciones que se invocan dentro:
+
+![*While()*](https://github.com/matecolombo/Robot-Jardinero/blob/9165a3e5d080afb3b05dfdab4dced4ebeee688fe/TP1/Imagenes_TP1/Item%201/main_while.PNG)
+
+Lo primero que aparece es la función *__WFI()* (Wait For Interruption) definida en **cmsis_gcc.h**. Esta mantiene al microcontrolador en estado sleep hasta recibir una interrupción y cuando sale de este estado, mediante un condicional *if()*, preguntamos si la interrupción es la asociada al SysTick. Si es así, bajamos el flag, encolamos en evento con *toggleIface_raise_evTick(&statechart)* y luego lo ejecutamos con *toggle_RunCycle(&statechart)*.
+
+![*toggleIface_raise_evTick()*](https://github.com/matecolombo/Robot-Jardinero/blob/9165a3e5d080afb3b05dfdab4dced4ebeee688fe/TP1/Imagenes_TP1/Item%201/toggle_raise_interface.PNG)
+
+![*toggle_RunCycle()*](https://github.com/matecolombo/Robot-Jardinero/blob/9165a3e5d080afb3b05dfdab4dced4ebeee688fe/TP1/Imagenes_TP1/Item%201/toggle_run_cycle.PNG)
+
+En resumen la jerarquia de archivos puede resumirse con el siguiente esquema:
 
 ![Resumen de las clases de archivos implicados en los proyectos](https://github.com/matecolombo/Robot-Jardinero/blob/57b0ff8d08d4ad0bed0c01417424829bffd83e38/TP1/Imagenes_TP1/Item%201/diagrama%20de%20archivos.drawio.png)
 
