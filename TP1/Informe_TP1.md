@@ -89,6 +89,12 @@ La licencia que tenemos de Yakindu no funciona en la última versión (4.0.5) de
 
 ## 3) Ejemplo 3_buttons
 
+La funcion tickCallbackSet es una funcion que llama a la rutina de interrupcion que se llevara a cabo, en este caso será setear SysTick_Time_Flag en true.
+
+Otra función que cabe destacar es Buttons_GetStatus
+
+Esta función nos retorna la variable **"Ret"** 
+
 ## 4) Ejemplo para TPF
 
 
