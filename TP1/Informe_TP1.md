@@ -123,6 +123,34 @@ La licencia que tenemos de Yakindu no funciona en la última versión (4.0.5) de
 
 ## 2) Ejemplo 2_blink
 
+Este ejemplo empieza desde el punto n.8 ya que se comparte el método de subida del programa con el Toggle. Se empieza analizando desde el main: 
+
+![blink_main](https://github.com/matecolombo/Robot-Jardinero/blob/b919a02cd5acdf047bea4c8e16bf737f2a81b7da/TP1/Imagenes_TP1/Item%202/blink_main.PNG)
+
+Comenzamos con la inicializacion de la placa llamando a *boardConfig()*, función declarada en **sapi_board.h** y definida en **sapi_board.c**. La misma llama internamente a *boardInit()* que configura el hardware directamente.
+
+Luego se invoca a la función *tickConfig(TICKRATE_MS)*, función declarada en **sapi_tick.h** y definida en **sapi_tick.c**. La misma llama internamente a *tickInit()* que configura la frecuencia de los ticks de la placa. El define TICKRATE_MS esta seteada en 1000 tick por segundos. Siguiendo con *TickCallbackSet( myTickHook , tickCallbackParams)* que recibe un puntero tickHook que define la interrupción a utilizar. Para finalizar las interrupciones por timer, la función *InitTimerTicks* que incializa los timers.
+
+Por ultimo, antes del ciclo *while* se inicializa y definen los estados del sistema, pasandole el diagrama de estados realizado con Yakindu:
+
+![blink_init&enter](https://github.com/matecolombo/Robot-Jardinero/blob/b919a02cd5acdf047bea4c8e16bf737f2a81b7da/TP1/Imagenes_TP1/Item%202/blin_init_&_enter.PNG)
+
+Se puede ver en estas dos funciones mofidican el estado del sitema, init hace la inicilizacion del vector de estados y luego enter activa un estado.
+
+Luego, adentrandonos al *while*, aparece *__WFI()* que pone al micro en estado *sleep* a la espera de una interrupción.
+
+Siguiendo, nos encontramos con el if que evalua si hay alguna flag de interrupcion, entramos se baja el flag para hablilitar una nueva y se updatean los timers.
+
+A continuación, nos encontramos con un ciclo *for*
+
+![blink_raise_time](https://github.com/matecolombo/Robot-Jardinero/blob/b919a02cd5acdf047bea4c8e16bf737f2a81b7da/TP1/Imagenes_TP1/Item%202/blink_raise_time_event.PNG)
+
+
+
+![blink_mark_asAtt_event](https://github.com/matecolombo/Robot-Jardinero/blob/b919a02cd5acdf047bea4c8e16bf737f2a81b7da/TP1/Imagenes_TP1/Item%202/mark_as_at_event_blink.PNG)
+
+![blink_run_cycle](https://github.com/matecolombo/Robot-Jardinero/blob/b919a02cd5acdf047bea4c8e16bf737f2a81b7da/TP1/Imagenes_TP1/Item%202/blin_run_cycle.PNG)
+
 ## 3) Ejemplo 3_buttons
 
 La funcion tickCallbackSet es una funcion que llama a la rutina de interrupcion que se llevara a cabo, en este caso será setear SysTick_Time_Flag en true.
