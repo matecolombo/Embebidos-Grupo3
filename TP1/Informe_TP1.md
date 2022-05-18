@@ -6,9 +6,9 @@
 
   *Calcagno Alan - 98617 - acalcagno@fi.uba.ar*
 
-  *Colombo Mateo - 98615 - aprimon@fi.uba.ar*
+  *Colombo Mateo - 98615 - mcolombo@fi.uba.ar*
 
-  *Primón Agustín - 99082 - mcolombo@fi.uba.ar*
+  *Primón Agustín - 99082 - aprimon@fi.uba.ar*
 
 ## 1) Guía/instructivo - Ejemplo 1_toggle
 
