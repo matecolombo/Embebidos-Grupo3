@@ -152,10 +152,6 @@ A continuación, nos encontramos con un ciclo *for*
 
 ## 3) Ejemplo 3_buttons
 
-La funcion tickCallbackSet es una funcion que llama a la rutina de interrupcion que se llevara a cabo, en este caso será setear SysTick_Time_Flag en true.
-
-![Funcion mytickhook](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%203/mytickhook.png?raw=true)
-
 Otra función que cabe destacar es Buttons_GetStatus.
 
 ![Funcion buttons_getstatus](https://github.com/matecolombo/Robot-Jardinero/blob/main/TP1/Imagenes_TP1/Item%203/buttons_getstatus.png)
