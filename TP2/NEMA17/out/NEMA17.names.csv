@@ -1,0 +1,188 @@
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00185c 00000004 t InitClkStates
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001860 00000074 t pinmuxing
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0004d0 00000044 t Board_LED_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000514 00000040 t Board_TEC_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000554 00000040 t Board_GPIO_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000594 00000030 t Board_ADC_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0005c4 00000038 t Board_SPI_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0005fc 00000024 t Board_I2C_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0018d8 00000008 t GpioButtons
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0018e0 0000000c t GpioLeds
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0018ec 00000012 t GpioPorts
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00067c 00000014 t Chip_SSP_GetClockIndex
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000690 00000018 t Chip_SSP_GetPeriphClockIndex
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000000 00000038 d i2c
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0007b0 00000014 t Chip_ADC_GetClockIndex
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0007c4 00000032 t getClkDiv
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001904 00000048 t InitClkStates
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0009e4 000000a0 t pll_calc_divs
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000a84 0000010c t pll_get_frac
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000b90 0000004c t Chip_Clock_FindBaseClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000e04 00000022 t Chip_Clock_GetDivRate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000048 00000008 b audio_usb_pll_freq
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001958 0000006c t periph_to_base
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000f70 0000002c t Chip_UART_GetIndex
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0019c4 00000008 t UART_BClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0019cc 00000008 t UART_PClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000038 00000004 d ClockSpeed
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001120 00000034 t gpioObtainPinInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000050 00000004 b callBackFuncParams
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000058 00000008 b tickCounter
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000060 00000004 b tickHookFunction
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000064 00000004 b g_hUsb
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001ac0 t __init_array_end
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001abc b __preinit_array_end
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001abc t __init_array_start
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001abc b __preinit_array_start
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000c28 0000001c T Chip_Clock_GetDividerSource
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W TIMER2_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000184 00000002 W DebugMon_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W RIT_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a080000 A __top_MFlashA512
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W ADCHS_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000114 T __section_table_start
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W FLASH_EEPROM_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W I2C0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000674 00000008 T __stdio_init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00017a 00000002 W HardFault_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000000 A __vectors_start__
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00086a 0000000c T Chip_ADC_SetResolution
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00140c 0000002c T SysTick_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000390 00000002 W initialise_monitor_handles
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SDIO_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W ATIMER_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000186 00000002 W PendSV_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000178 00000002 W NMI_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001ac8 R __exidx_end
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000150 T __data_section_table_end
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W I2C1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W UART1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO5_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W CAN1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:53ff74fa A __valid_user_code_checksum
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001ac8 R _etext
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W USB1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W I2S0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W TIMER3_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000ea6 0000000c T Chip_Clock_GetBaseClocktHz
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W UART0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001a8 00000012 T bss_init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SGPIO_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001500 T __aeabi_uldivmod
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000070 ? _noinit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000068 00000004 B SystemCoreClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000f9c 00000054 T Chip_UART_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W ADC0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000180 00000002 W UsageFault_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000f24 0000004c T Chip_Clock_GetRate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO6_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000458 0000006c T Board_SetupClocking
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:20008000 A __top_RamAHB32
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001530 000002d0 T __udivmoddi4
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0018d4 00000004 T ExtRateIn
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W IntDefaultHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000300 T __CRP_WORD_END__
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SSP0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001ac0 R __exidx_start
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0002fc 00000004 T CRP_WORD
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001804 00000048 T __libc_init_array
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W ADC1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000644 00000030 T Board_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00041e 00000002 W _init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000114 T __data_section_table
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W RTC_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000070 B _ebss
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W TIMER0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000394 00000088 T Reset_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001390 0000007c T tickInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:20010000 A __top_RamAHB_ETB16
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SPI_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000774 00000038 T Chip_I2C_SetClockRate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W LCD_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000bdc 0000004c T Chip_Clock_EnableCrystal
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10008000 A __top_RamLoc32
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00018a 0000001e T data_init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W TIMER1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000750 00000024 T Chip_I2C_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W UART2_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000d98 0000006c T Chip_Clock_GetMainPLLHz
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0019d4 000000e6 T gpioPinsInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0006a8 00000012 T Chip_SSP_SetClockRate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO2_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000e80 00000026 T Chip_Clock_GetBaseClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000048 B _bss
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000838 00000032 T Chip_ADC_SetSampleRate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W I2S1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0006ba 0000003e T Chip_SSP_SetBitRate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0007ac 00000002 T Chip_GPIO_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001900 00000004 T OscRateIn
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000070 ? _end_noinit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10008000 A _vStackTop
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SSP1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000178 T __bss_section_table_end
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001154 000001ac T gpioInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001800 00000002 W __aeabi_ldiv0
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001438 0000001c T USB0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO3_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SCT_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000c44 0000001c T Chip_Clock_GetDividerDivisor
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0002fc T __CRP_WORD_START__
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00184c 00000010 T memset
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00017c 00000002 W MemManage_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000300 00000090 T main
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W WDT_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:2000c000 A __top_RamAHB16
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1008a000 A __top_RamLoc40
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000182 00000002 W SVC_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO7_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000eb4 0000003c T Chip_Clock_EnableOpts
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000c60 000000b8 T Chip_Clock_GetClockInputHz
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000d18 00000080 T Chip_Clock_CalcMainPLLValue
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0010cc 00000038 T SystemInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W SPIFI_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0014c8 00000038 T delay
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W QEI_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000150 T __bss_section_table
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001300 0000006a T gpioWrite
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00041c 00000002 W _fini
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0007f8 00000040 T Chip_ADC_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1000006c 00000004 B g_pUsbApi
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000420 00000038 T Board_SetupMuxing
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000ff0 000000dc T Chip_UART_SetBaudFDR
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00136c 0000000c T tickRead
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000040 00000008 D tickRateMS
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W ETH_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000000 ? _end_uninit_RESERVED
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W CAN0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000000 D _data
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000070 B _pvHeapStart
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000178 T __section_table_end
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0006f8 00000038 T Chip_SSP_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GINT0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W DAC_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000620 00000024 T Board_Debug_Init
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:10000048 D _edata
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000730 00000020 T Chip_I2C_EventHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W M0SUB_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000878 00000158 T Chip_SetupCoreClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO0_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000000 00000040 T g_pfnVectors
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0009d0 00000014 T SystemCoreClockUpdate
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W DMA_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W EVRT_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1b080000 A __top_MFlashB512
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001800 00000002 W __aeabi_idiv0
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a00017e 00000002 W BusFault_Handler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000ef0 00000034 T Chip_Clock_Enable
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W UART3_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W MCPWM_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W M0APP_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001454 00000074 T boardInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000040 000000d4 T g_pfnVendorVectors
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GINT1_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001378 00000018 T tickPowerSet
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a000e28 00000058 T Chip_Clock_SetBaseClock
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a001104 0000001c T cyclesCounterInit
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0001ba 00000002 W GPIO4_IRQHandler
+examples/c/sapi/TP/NEMA17/out/NEMA17.elf:1a0004c4 0000000c T Board_SystemInit
